@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent) :
     installEventFilter(m_pTitleBar);
 
     setWindowTitle("PM");
-    setWindowIcon(QIcon("./clock.png"));
+    setWindowIcon(QIcon(":/icon"));
 
     QMenu *menu[10];
     menu[0] = new QMenu("文件");

@@ -20,3 +20,6 @@ HEADERS  += mainwindow.h \
     titleBar.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    PM.qrc
