@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file alias="icon">image/icon.png</file>
+        <file alias="en.qm">language/PM_en.qm</file>
+        <file>language/PM_en.ts</file>
+        <file alias="zh_cn.qm">language/PM_zh_CN.qm</file>
+        <file>language/PM_zh_CN.ts</file>
     </qresource>
 </RCC>

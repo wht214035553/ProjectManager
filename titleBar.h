@@ -1,5 +1,5 @@
 // wht 摘抄自 http://blog.csdn.net/liang19890820/article/details/50555298
-//
+// 添加一些改动
 
 #ifndef TITLE_BAR
 #define TITLE_BAR

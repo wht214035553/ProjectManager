@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QVBoxLayout>
+#include <QTranslator>
 #include "titleBar.h"
 
 namespace Ui {
@@ -18,6 +19,7 @@ public:
     ~MainWindow();
 private:
     void setWindowSize();
+    void setLanguage(QString file);
 
 
 private:
@@ -26,6 +28,7 @@ private:
 private:
     TitleBar *m_pTitleBar;
     QVBoxLayout *m_pMainLayout;
+    QTranslator *m_pTranslator;
 };
 
 #endif // MAINWINDOW_H

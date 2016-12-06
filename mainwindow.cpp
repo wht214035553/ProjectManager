@@ -12,10 +12,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     this->setWindowSize();
 
+    m_pTranslator = new QTranslator(this);
+    this->setLanguage(":/en.qm");
+
     m_pTitleBar = new TitleBar(this);
     installEventFilter(m_pTitleBar);
 
-    setWindowTitle("PM");
+    setWindowTitle(tr("PM"));
     setWindowIcon(QIcon(":/icon"));
 
     QMenu *menu[10];
@@ -67,6 +70,12 @@ void MainWindow::setWindowSize()
     this->resize(800,600);
     this->move((deskTop->width() - this->width())/2, (deskTop->height() - this->height())/2);
     this->setWindowFlags(Qt::FramelessWindowHint);
+}
+
+void MainWindow::setLanguage(QString file)
+{
+    m_pTranslator->load(file);
+    qApp->installTranslator(m_pTranslator);
 }
 
 MainWindow::~MainWindow()

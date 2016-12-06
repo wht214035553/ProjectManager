@@ -11,6 +11,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = ProjectManager
 TEMPLATE = app
 
+TRANSLATIONS = PM_zh_CN.ts \
+    PM_en.ts
 
 SOURCES += main.cpp\
         mainwindow.cpp \
@@ -23,3 +25,4 @@ FORMS    += mainwindow.ui
 
 RESOURCES += \
     PM.qrc
+
